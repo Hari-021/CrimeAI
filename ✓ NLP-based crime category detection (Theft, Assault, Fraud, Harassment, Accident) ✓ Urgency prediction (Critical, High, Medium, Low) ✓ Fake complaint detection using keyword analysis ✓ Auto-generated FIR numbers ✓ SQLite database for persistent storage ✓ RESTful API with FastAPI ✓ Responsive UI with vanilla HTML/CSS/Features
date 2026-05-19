@@ -1,0 +1,9 @@
+✓ NLP-based crime category detection (Theft, Assault, Fraud, Harassment, Accident)
+✓ Urgency prediction (Critical, High, Medium, Low)
+✓ Fake complaint detection using keyword analysis
+✓ Auto-generated FIR numbers
+✓ SQLite database for persistent storage
+✓ RESTful API with FastAPI
+✓ Responsive UI with vanilla HTML/CSS/JS
+✓ Real-time statistics dashboard
+✓ Crime hotspot tracking
