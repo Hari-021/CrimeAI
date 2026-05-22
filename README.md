@@ -1,97 +1,237 @@
-**Project Description**
+# 🚔 AI Crime Intelligence System
+
+An advanced AI-powered crime complaint management system built using **FastAPI, HTML, CSS, and JavaScript**.
+
+This project allows citizens to submit crime complaints using:
+
+- 🎤 Voice Input
+- 📸 Image Upload
+- 📍 Address Details
+
+The AI system automatically analyzes complaints and generates FIR details with urgency levels.
+
+---
+
+# 🌟 Features
+
+## ✅ AI Complaint Analysis
+
+The system automatically detects:
+
+### Crime Categories
+- Theft
+- Assault
+- Fraud
+- Other
+
+### Urgency Levels
+- Critical
+- High
+- Medium
+
+---
+
+## 🎤 Voice Complaint Support
+
+Users can:
+
+- Click microphone button
+- Speak complaint
+- Convert speech to text automatically
+
+Uses:
+- Web Speech API
+
+---
+
+## 📸 Image Upload Support
+
+Citizens can upload:
+
+- Crime evidence photos
+- Screenshots
+- Incident images
+
+On mobile devices it shows:
+
+- Camera
+- Gallery / Photos
+
+---
+
+## 📍 Address-Based Reporting
+
+Instead of latitude and longitude:
+
+- Simple address input field added
+- Easier for citizens to report incidents
+
+---
+
+## 📊 Live Dashboard
+
+Displays:
+
+- Total complaints
+- Critical complaints
+- Complaint history
+
+---
+
+## 🧠 FIR Generation
+
+The system automatically generates:
+
+- FIR Number
+- Category
+- Urgency Level
+
+Using AI-based analysis logic.
+
+---
+
+# 🛠️ Technologies Used
+
+## Backend
+- FastAPI
+- Python
+- Uvicorn
+
+## Frontend
+- HTML
+- CSS
+- JavaScript
+
+## AI Features
+- NLP-based text analysis
+- Voice recognition
+- Automated classification
+
+---
+
+# 📂 Project Structure
+
+```bash
+AI_Crime_System/
+│
+├── main.py
+├── uploads/
+├── README.md
 
 
-🚀 Government-Grade AI System for Real-Time Crime Detection, Classification, and FIR Generation
+#⚙️ Installation Process
 
-A full-stack intelligent crime reporting system that uses NLP and Machine Learning to:
-- Automatically classify crime categories from complaint text
-- Predict urgency levels based on severity keywords
-- Detect fake/frivolous complaints
-- Generate FIR numbers automatically
-- Track crime hotspots using geo-location data
-- Provide real-time statistics and analytics
+Step 1 — Install Python
+Download Python:
+https://www.python.org/downloads/
+During installation enable:
+Add Python to PATH
 
+Step 2 — Clone Repository
+git clone https://github.com/your-username/AI-Crime-Intelligence.git
 
-**Features**
+Step 3 — Open Project Folder
+cd AI-Crime-Intelligence
 
+Step 4 — Install Dependencies
+pip install fastapi uvicorn python-multipart
 
-✓ NLP-based crime category detection (Theft, Assault, Fraud, Harassment, Accident)
-✓ Urgency prediction (Critical, High, Medium, Low)
-✓ Fake complaint detection using keyword analysis
-✓ Auto-generated FIR numbers
-✓ SQLite database for persistent storage
-✓ RESTful API with FastAPI
-✓ Responsive UI with vanilla HTML/CSS/JS
-✓ Real-time statistics dashboard
-✓ Crime hotspot tracking
+Step 5 — Run the Project
+uvicorn main:app --reload --port 9000
 
+Step 6 — Open in Browser
+http://localhost:9000
 
-**Tech Stack**
+#🧪 How It Works
+1️⃣ User Submits Complaint
 
+The citizen enters:
 
-Backend:   Python, FastAPI, SQLAlchemy, SQLite
-Frontend: HTML5, CSS3, JavaScript (Vanilla)
-AI/ML:    Natural Language Processing, Keyword-based Classification
+Complaint description
+Address
+Optional evidence image
 
+OR
 
-**How It Works**
+Uses microphone for voice complaint.
 
+2️⃣ AI Analyzes Complaint
 
-1. Citizen submits complaint via text
-2. AI analyzes the text using NLP
-3. System detects crime category
-4. Urgency level is predicted
-5. FIR number is auto-generated
-6. Complaint is saved to database
-7. Statistics are updated in real-time
+The backend:
 
+Detects crime keywords
+Classifies crime type
+Detects urgency level
+3️⃣ FIR Generated
 
-**API End points**
+The system generates:
 
+FIR/3891/2024
 
-POST /api/complaints/submit  - Submit new complaint
-GET  /api/complaints         - Get all complaints
-GET  /api/statistics        - Get system statistics
-GET  /                      - Web dashboard
+With category and urgency level.
 
+4️⃣ Dashboard Updates
 
-**Sample Request**
+Live complaint statistics update automatically.
 
+📸 Key Functionalities
+🎙️ Speech Recognition
 
+Uses browser speech API:
 
-curl -X POST "http://localhost:8000/api/complaints/submit" \
-  -d "text_content=Someone+stole+my+wallet&latitude=28.6139&longitude=77.2090"
+window.SpeechRecognition
+📤 File Upload
 
+Supports:
 
-**Sample Response**
+Camera capture
+Gallery upload
 
-json
+Using:
 
-{
-  "status": "success",
-  "category": "THEFT",
-  "urgency": "MEDIUM",
-  "fir": "FIR/4523/2024"
-}
-
-
-**To Run Locally**
-
-bash
-
-# Install dependencies
-pip install fastapi uvicorn sqlalchemy
-
-# Run the server
-python app.py
-
-# Open in browser
-http://localhost:8000
+<input type="file" accept="image/*" capture="environment">
 
 
-**Author**
-Periketi Hari Krishna
+#🔮 Future Enhancements
 
-**GitHub**: github.com/Hari-021
-**Email**: periketi.hari54@gmail.com
+Planned upgrades:
 
+Google Maps Integration
+AI Crime Prediction
+Heatmap Analytics
+Emergency Alerts
+Multi-language Support
+Facial Recognition
+CCTV Integration
+Admin Dashboard
+PDF FIR Download
+Email/SMS Notifications
+📈 Use Cases
+Smart Policing
+Women Safety Systems
+Emergency Reporting
+Government AI Platforms
+Cybercrime Reporting
+Public Safety Applications
+
+#👨‍💻 Author
+Hari Krishna
+AI & Full Stack Developer
+
+Interested in:
+Artificial Intelligence
+Crime Analytics
+NLP Systems
+FastAPI Development
+Smart Government Solutions
+
+#⭐ Support
+If you like this project:
+
+⭐ Star the repository
+🍴 Fork the project
+🛠️ Contribute improvements
+
+#📄 License
+
+This project is open-source and available under the MIT License.
