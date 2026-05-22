@@ -215,7 +215,7 @@ Cybercrime Reporting
 Public Safety Applications
 
 #👨‍💻 Author
-Hari Krishna
+Periketi Hari Krishna
 AI & Full Stack Developer
 
 Interested in:
